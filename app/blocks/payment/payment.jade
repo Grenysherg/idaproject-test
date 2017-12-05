@@ -2,7 +2,6 @@ include ../card/card
 
 mixin payment()
 	- var payment = getData('payment');
-
 	<!-- Payment Start -->
 	+b('section').payment&attributes(attributes)
 		+e('div').container
@@ -12,6 +11,6 @@ mixin payment()
 				+e('dl').info-metadata
 					each item in payment.infoMetadata
 						+e('dt').info-key=item.key
-						+e('dd').info-key=item.value
+						+e('dd').info-value=item.value
 			+card()
 	<!-- Payment End -->

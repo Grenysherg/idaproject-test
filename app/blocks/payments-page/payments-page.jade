@@ -1,0 +1,11 @@
+include ../user-nav/user-nav
+include ../payments-main/payments-main
+include ../page-footer/page-footer
+
+mixin payments-page()
+	+b('div').payments-page&attributes(attributes)
+		+e('div').left-content
+			+user-nav()
+		+e('div').right-content
+			+payments-main()
+			+page-footer()

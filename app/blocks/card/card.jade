@@ -6,6 +6,7 @@ mixin card()
 	- var card = getData('card');
 
 	<!-- Card Start -->
+
 	+b('section').card&attributes(attributes)
 		+e('h2').title='Данные банковской карты'
 		+e('form').form
@@ -22,5 +23,6 @@ mixin card()
 			+e('div').right-content
 				+input-field(card.code)
 			+btn(card.btn).__form-submit
+
 	<!-- Card End -->
 

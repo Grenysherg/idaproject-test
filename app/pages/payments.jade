@@ -1,15 +1,9 @@
 extends /blocks/layout-default/layout-default
 
-include /blocks/user-nav/user-nav
-include /blocks/payments-main/payments-main
-include /blocks/page-footer/page-footer
+include /blocks/payments-page/payments-page
 
 block head
 	- var page = getData('payments-page');
 
 block content
-	+e('div').left-content
-		+user-nav()
-	+e('div').right-content
-		+payments-main()
-		+page-footer()
+	+payments-page()
