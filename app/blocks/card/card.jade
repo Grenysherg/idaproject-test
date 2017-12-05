@@ -1,0 +1,26 @@
+include ../input-field/input-field
+include ../select-field/select-field
+include ../btn/btn
+
+mixin card()
+	- var card = getData('card');
+
+	<!-- Card Start -->
+	+b('section').card&attributes(attributes)
+		+e('h2').title='Данные банковской карты'
+		+e('form').form
+			+e('div').left-content
+				+e('fieldset').form-section
+					+e('legend').form-section-title='Номер карты'
+					each item in card.numberInputs
+						+input-field(item).__form-section-item
+				+e('fieldset').form-section
+					+e('legend').form-section-title='Срок действия'
+					each item in card.validitySelects
+						+select-field(item).__form-section-item
+				+input-field(card.owner)
+			+e('div').right-content
+				+input-field(card.code)
+			+btn(card.btn).__form-submit
+	<!-- Card End -->
+

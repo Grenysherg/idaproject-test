@@ -1,0 +1,22 @@
+[
+	{
+		"name": "yourAccount",
+		"href": "#",
+		"text": "Личный кабинет"
+	},
+	{
+		"name": "payments",
+		"href": "payments.html",
+		"text": "Платежи"
+	},
+	{
+		"name": "paymentHistory",
+		"href": "#",
+		"text": "История платежей"
+	},
+	{
+		"name": "settings",
+		"href": "#",
+		"text": "Настройки"
+	}
+]

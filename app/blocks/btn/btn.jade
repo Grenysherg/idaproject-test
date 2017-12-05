@@ -1,0 +1,4 @@
+mixin btn(btnParam)
+	case btnParam.type
+		when 'submit'
+			+b('button')(class='btn--' + btnParam.theme, type='submit')&attributes(attributes)=btnParam.text

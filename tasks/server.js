@@ -22,6 +22,7 @@ gulp.task('server', () => (
 				'dist'
 			],
 			directory: false,
+			index: 'payments.html',
 			middleware: NODE_ENV !== 'production' ? [debuga()] : []
 		},
 		tunnel: !!TUNNEL

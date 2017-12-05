@@ -1,0 +1,13 @@
+mixin user-nav()
+	<!-- User Navigation Start -->
+	+b('nav').user-nav&attributes(attributes)
+		+e('ul').list
+			each item in getData('user-nav')
+				+e('li').item
+					if (item.name === page.name)
+						+e('a').link--active=item.text
+					else
+						+e('a').link(href=item.href)=item.text
+			+e('li').item
+				+e('a').link--exit(href='#')='Выйти'
+	<!-- User Navigation End -->

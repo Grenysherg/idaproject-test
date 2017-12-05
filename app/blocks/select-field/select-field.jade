@@ -1,0 +1,7 @@
+mixin select-field(selectParam)
+	+b('label').select-field&attributes(attributes)
+		if (selectParam.labelText)
+			+e('span').label=selectParam.labelText
+		+e('select').select(name=selectParam.name)&attributes(selectParam.attributes)
+			each option in (selectParam.options)
+				+e('option').option(value=option.value)&attributes(option.attributes)=option.text

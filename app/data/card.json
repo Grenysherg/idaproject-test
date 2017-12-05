@@ -1,0 +1,160 @@
+{
+	"numberInputs": [
+		{
+			"name": "card-number-1",
+			"type": "number",
+			"attributes": {
+				"required": true
+			}
+		},
+		{
+			"name": "card-number-2",
+			"type": "number",
+			"attributes": {
+				"required": true
+			}
+		},
+		{
+			"name": "card-number-3",
+			"type": "number",
+			"attributes": {
+				"required": true
+			}
+		},
+		{
+			"name": "card-number-4",
+			"type": "number",
+			"attributes": {
+				"required": true
+			}
+		}
+	],
+	"code": {
+		"labelText": "Код CVV2/CVC2",
+		"isLabelVisible": true,
+		"name": "card-code",
+		"type": "number",
+		"attributes": {
+			"required": true
+		},
+		"tip": true
+	},
+	"owner": {
+		"labelText": "Держатель карты",
+		"isLabelVisible": false,
+		"name": "card-owner",
+		"type": "text",
+		"attributes": {
+			"placeholder": "Держатель карты",
+			"required": true
+		}
+	},
+	"validitySelects": [
+		{
+			"name": "card-validity-month",
+			"attributes": {},
+			"options": [
+				{
+					"value": "1",
+					"attributes": {},
+					"text": "01"
+				},
+				{
+					"value": "2",
+					"attributes": {},
+					"text": "02"
+				},
+				{
+					"value": "3",
+					"attributes": {},
+					"text": "03"
+				},
+				{
+					"value": "4",
+					"attributes": {
+						"selected": true
+					},
+					"text": "04"
+				},
+				{
+					"value": "5",
+					"attributes": {},
+					"text": "05"
+				},
+				{
+					"value": "6",
+					"attributes": {},
+					"text": "06"
+				},
+				{
+					"value": "7",
+					"attributes": {},
+					"text": "07"
+				},
+				{
+					"value": "8",
+					"attributes": {},
+					"text": "08"
+				},
+				{
+					"value": "9",
+					"attributes": {},
+					"text": "09"
+				},
+				{
+					"value": "10",
+					"attributes": {},
+					"text": "10"
+				},
+				{
+					"value": "11",
+					"attributes": {},
+					"text": "11"
+				},
+				{
+					"value": "12",
+					"attributes": {},
+					"text": "12"
+				}
+			]
+		},
+		{
+			"name": "card-validity-year",
+			"attributes": {},
+			"options": [
+				{
+					"value": "2018",
+					"attributes": {
+						"selected": true
+					},
+					"text": "2018"
+				},
+				{
+					"value": "2019",
+					"attributes": {},
+					"text": "2019"
+				},
+				{
+					"value": "2020",
+					"attributes": {},
+					"text": "2020"
+				},
+				{
+					"value": "2021",
+					"attributes": {},
+					"text": "2021"
+				},
+				{
+					"value": "2022",
+					"attributes": {},
+					"text": "2022"
+				}
+			]
+		}
+	],
+	"btn": {
+		"type": "submit",
+		"theme": "blue",
+		"text": "Оплатить"
+	}
+}

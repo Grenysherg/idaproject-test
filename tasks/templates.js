@@ -25,6 +25,7 @@ gulp.task('templates', () => (
 		.pipe(gulpIf(global.watch, inheritance({basedir: 'app'})))
 		.pipe(filter(file => /app[\\\/]pages/.test(file.path)))
 		.pipe(jade({basedir: 'app', data}))
+		.pipe(minify({comments: true}))
 		.pipe(gulpIf(process.env.PRETTIFY !== false, prettify({
 			braceStyle: 'expand',
 			indentWithTabs: true,
@@ -41,7 +42,6 @@ gulp.task('templates', () => (
 			exts: ['js', 'css']
 		})))
 		.pipe(rename({dirname: '.'}))
-		.pipe(minify())
 		.pipe(gulp.dest('dist'))
 ));
 
