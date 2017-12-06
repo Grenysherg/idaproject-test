@@ -1,11 +1,35 @@
 // Payment Start
 
 .payment
+	padding-top 43px
+	padding-bottom 45px
+
 	background-color $black-haze
 
+	@media (min-width $tablet-width)
+		padding-right 46px
+		padding-left 30px
 
-	&__info-title,
-	&__info-key
+
+	&__title
+		visuallyHidden()
+
+
+	&__info
+		margin-right auto
+		margin-bottom 24px
+		margin-left auto
+		width 300px
+
+		@media (min-width $tablet-width)
+			margin-right 0
+			margin-left 0
+
+
+	&__info-title
+		margin-top 0
+		margin-bottom 18px
+
 		font-family $arial
 		font-size 16px
 		font-weight normal
@@ -14,12 +38,35 @@
 		color $bali-hai
 
 
-	&__info-value
+	&__info-metadata
+		margin-top 0
+		margin-bottom 0
+
+
+	&__info-key
+		margin-bottom 6px
+		display inline-block
+		width 154px
+
 		font-family $arial
 		font-size 16px
 		font-weight normal
 		font-style normal
 		line-height 21px
+		vertical-align top
+		color $bali-hai
+
+
+	&__info-value
+		margin-left 0
+		display inline-block
+
+		font-family $arial
+		font-size 16px
+		font-weight normal
+		font-style normal
+		line-height 21px
+		vertical-align top
 		color $tuna
 
 // Payment End

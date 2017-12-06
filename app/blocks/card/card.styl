@@ -1,21 +1,136 @@
 // Card Start
 
 .card
+	position relative
+
+
 	&__title
+		margin-top 0
+		margin-bottom 23px
+
 		font-family $open-sans
 		font-size 21.98px
 		font-weight 700
 		font-style normal
 		line-height 25.45px
+		text-align center
 		color $tuna
+
+		@media (min-width $tablet-width)
+			text-align left
+
+
+	&__content
+		margin-right auto
+		margin-left auto
+		width 315px
+
+		background-color $black-haze
+		border 1px solid $mystic
+		border-radius 10px
+
+		@media (min-width $big-mobile-width)
+			width 350px
+
+		@media (min-width $tablet-width)
+			margin-right 0
+			margin-left 0
+
+
+		&--front
+			margin-bottom 20px
+			padding-top 20px
+			padding-right 13px
+			padding-left 13px
+			padding-bottom 12px
+
+			@media (min-width $big-mobile-width)
+				padding-right 15px
+				padding-left 16px
+
+			@media (min-width $tablet-width)
+				position relative
+				z-index 1
+
+				margin-bottom 40px
+
+
+		&--back
+			margin-bottom 40px
+			padding-top 25px
+			padding-bottom 88px
+
+			text-align right
+
+			@media (min-width $tablet-width)
+				position absolute
+				top 68px
+				right 0
+
+				margin-bottom 0
+
+
+			&::before
+				content ''
+
+				margin-bottom 16px
+				display block
+				width 100%
+				height 42px
+
+				background-color $mystic
+
+
+
+	&__form-section
+		margin 0
+		margin-bottom 13px
+		padding 0
+
+		border none
 
 
 	&__form-section-title
+		margin-bottom 4px
+
 		font-family $arial
 		font-size 16px
 		font-weight normal
 		font-style normal
 		line-height 21px
 		color $bali-hai
+
+
+	&__form-section-item
+		margin-right 5px
+
+
+		&--last
+			margin-right 0
+
+
+		&--number
+			width 65px
+
+
+	&__item
+		&--owner
+			width 100%
+
+
+		&--code
+			margin-right 15px
+			width 138px
+
+
+	&__form-submit
+		margin-right auto
+		margin-left auto
+		display block
+		width 133px
+
+		@media (min-width $tablet-width)
+			margin-right 0
+			margin-left 15px
 
 // Card End

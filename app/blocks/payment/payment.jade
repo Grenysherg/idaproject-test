@@ -2,15 +2,17 @@ include ../card/card
 
 mixin payment()
 	- var payment = getData('payment');
+
 	<!-- Payment Start -->
+
 	+b('section').payment&attributes(attributes)
-		+e('div').container
-			+e('h1').title='Оплата'
-			+e('section').info
-				+e('h2').info-title='Информация по оплате:'
-				+e('dl').info-metadata
-					each item in payment.infoMetadata
-						+e('dt').info-key=item.key
-						+e('dd').info-value=item.value
-			+card()
+		+e('h1').title='Оплата'
+		+e('section').info
+			+e('h2').info-title='Информация по оплате:'
+			+e('dl').info-metadata
+				each item in payment.infoMetadata
+					+e('dt').info-key=item.key
+					+e('dd').info-value=item.value
+		+card()
+
 	<!-- Payment End -->

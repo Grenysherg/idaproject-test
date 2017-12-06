@@ -1,7 +1,17 @@
 // User Navigation Start
 
 .user-nav
+	&__list
+		margin-top 0
+		margin-bottom 0
+		padding-left 0
+
+		list-style none
+
+
 	&__link
+		padding-top 25px
+		padding-bottom 26px
 		display block
 
 		font-family $open-sans
@@ -9,8 +19,14 @@
 		font-weight 700
 		font-style normal
 		line-height 24px
+		text-align center
 		text-decoration none
 		color $white
+
+		@media (min-width $desktop-width)
+			padding-left 30px
+
+			text-align left
 
 
 		&--odd
@@ -31,5 +47,6 @@
 			color $waterloo
 
 			background-color $shark--darker
+			border-top 1px solid $shark--lighter
 
 // User Navigation End

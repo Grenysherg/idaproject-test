@@ -4,6 +4,5 @@ mixin input-field(inputParam)
 			+e('span')(class=inputParam.isLabelVisible ? 'label' : 'label--hidden')=inputParam.labelText
 		+e('input').input(type=inputParam.type, name=inputParam.name)&attributes(inputParam.attributes)
 		if (inputParam.tip)
-			+e('span').tip
-				+e('span').tip-sign
+			+e('span').tip-sign
 

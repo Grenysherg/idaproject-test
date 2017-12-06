@@ -1,5 +1,14 @@
 .input-field
+	position relative
+
+	display inline-block
+
+	text-align left
+
+
 	&__label
+		margin-bottom 4px
+
 		font-family $arial
 		font-size 16px
 		font-weight normal
@@ -8,7 +17,16 @@
 		color $bali-hai
 
 
+		&--hidden
+			visuallyHidden()
+
+
 	&__input
+		padding-top 10px
+		padding-left 10px
+		padding-bottom 9px
+		width inherit
+
 		font-family $arial
 		font-size 16px
 		font-weight normal
@@ -17,15 +35,24 @@
 		color $loblolly
 
 		background-color $white
+		border 1px solid $mystic
 
 
-		&:-ms-input-placeholder {
-			color: $loblolly;
-		}
+		&:-ms-input-placeholder
+			color $loblolly
 
 
-		&::placeholder {
-			color: $loblolly;
+		&::placeholder
+			color $loblolly
 
-			opacity: 1;
-		}
+			opacity 1
+
+
+	&__tip-sign
+		position absolute
+		right 9px
+		bottom 7px
+
+		cursor pointer
+
+		sprite($tip)

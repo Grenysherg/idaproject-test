@@ -30,7 +30,7 @@
 		}
 	],
 	"code": {
-		"labelText": "Код CVV2/CVC2",
+		"labelText": "Код CVV2 / CVC2",
 		"isLabelVisible": true,
 		"name": "card-code",
 		"type": "number",

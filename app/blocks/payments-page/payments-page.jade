@@ -4,8 +4,9 @@ include ../page-footer/page-footer
 
 mixin payments-page()
 	+b('div').payments-page&attributes(attributes)
-		+e('div').left-content
-			+user-nav()
-		+e('div').right-content
-			+payments-main()
-			+page-footer()
+		+e('div').container
+			+e('div').content--nav
+				+user-nav()
+			+e('div').content--main
+				+payments-main()
+				+page-footer()

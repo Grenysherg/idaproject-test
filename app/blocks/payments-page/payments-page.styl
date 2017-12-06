@@ -1,2 +1,32 @@
 .payments-page
-	display block
+	&__container
+		@media (min-width $big-mobile-width)
+			margin-right auto
+			margin-left auto
+
+			width 460px
+
+		@media (min-width $tablet-width)
+			width 640px
+
+		@media (min-width $desktop-width)
+			width 960px
+
+			font-size 0
+
+
+	&__content
+		@media (min-width $desktop-width)
+			display inline-block
+
+			vertical-align top
+
+
+		&--nav
+			@media (min-width $desktop-width)
+				width 320px
+
+
+		&--main
+			@media (min-width $desktop-width)
+				width 640px
