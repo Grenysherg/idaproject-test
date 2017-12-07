@@ -16,7 +16,7 @@ const isDebug = process.env.NODE_ENV !== 'production';
 
 gulp.task('styles', () => (
 	gulp.src('app/styles/*.styl')
-		.pipe(plumber({errorHandler: errorHandler(`Error in \'styles\' task`)}))
+		.pipe(plumber({errorHandler: errorHandler('Error in \'styles\' task')}))
 		.pipe(gulpIf(isDebug, sourcemaps.init()))
 		.pipe(stylus({
 			use: [
@@ -26,6 +26,7 @@ gulp.task('styles', () => (
 			],
 			'include css': true
 		}))
+		.pipe(gulp.dest('dist/assets/styles'))
 		.pipe(gulpIf(!isDebug, gcmq()))
 		.pipe(gulpIf(!isDebug, nano({zindex: false})))
 		.pipe(rename({suffix: '.min'}))
