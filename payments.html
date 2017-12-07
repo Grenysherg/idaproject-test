@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang=ru>
+
+	<head>
+		<meta charset=utf-8>
+		<meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+		<meta http-equiv=X-UA-Compatible content="IE=edge">
+		<title>Платежи</title>
+		<link href=/assets/styles/app.min.css rel=stylesheet>
+	</head>
+
+	<body class=page>
+		<!--Page Start-->
+		<div class=payments-page>
+			<div class=payments-page__container>
+				<div class="payments-page__content payments-page__content--nav">
+					<!--User Navigation Start-->
+					<nav class=user-nav>
+						<ul class=user-nav__list>
+							<li class=user-nav__item>
+								<a href=# class="user-nav__link user-nav__link--odd">Личный кабинет</a>
+							</li>
+							<li class=user-nav__item>
+								<a class="user-nav__link user-nav__link--active">Платежи</a>
+							</li>
+							<li class=user-nav__item>
+								<a href=# class="user-nav__link user-nav__link--odd">История платежей</a>
+							</li>
+							<li class=user-nav__item>
+								<a href=# class="user-nav__link user-nav__link--even">Настройки</a>
+							</li>
+							<li class=user-nav__item>
+								<a href=# class="user-nav__link user-nav__link--exit">Выйти</a>
+							</li>
+						</ul>
+					</nav>
+					<!--User Navigation End-->
+				</div>
+				<div class="payments-page__content payments-page__content--main">
+					<!--Main Start-->
+					<main class=payments-main role=main>
+						<!--Payment Start-->
+						<section class=payment>
+							<h1 class=payment__title>Оплата</h1>
+							<section class=payment__info>
+								<h2 class=payment__info-title>Информация по оплате:</h2>
+								<dl class=payment__info-metadata>
+									<dt class=payment__info-key>Номер счета:</dt>
+									<dd class=payment__info-value>87123658716587</dd>
+									<dt class=payment__info-key>Сумма платежа:</dt>
+									<dd class=payment__info-value>100 руб.</dd>
+								</dl>
+							</section>
+							<!--Card Start-->
+							<section class=card>
+								<h2 class=card__title>Данные банковской карты</h2>
+								<form class=card__form>
+									<div class="card__content card__content--front">
+										<fieldset class=card__form-section>
+											<legend class=card__form-section-title>Номер карты</legend>
+											<label class="input-field card__form-section-item card__form-section-item--number">
+												<input type=text name=card-number-1 class=input-field__input pattern="/[0-9]{4}/" required>
+											</label>
+											<label class="input-field card__form-section-item card__form-section-item--number">
+												<input type=text name=card-number-2 class=input-field__input pattern="/[0-9]{4}/" required>
+											</label>
+											<label class="input-field card__form-section-item card__form-section-item--number">
+												<input type=text name=card-number-3 class=input-field__input pattern="/[0-9]{4}/" required>
+											</label>
+											<label class="input-field card__form-section-item card__form-section-item--number card__form-section-item--last">
+												<input type=text name=card-number-4 class=input-field__input pattern="/[0-9]{4}/" required>
+											</label>
+										</fieldset>
+										<fieldset class=card__form-section>
+											<legend class=card__form-section-title>Срок действия</legend>
+											<label class="select-field card__form-section-item card__form-section-item--validity-month">
+												<select name=card-validity-month class=select-field__select>
+													<option value=1 class=select-field__option>01</option>
+													<option value=2 class=select-field__option>02</option>
+													<option value=3 class=select-field__option>03</option>
+													<option value=4 class=select-field__option selected>04</option>
+													<option value=5 class=select-field__option>05</option>
+													<option value=6 class=select-field__option>06</option>
+													<option value=7 class=select-field__option>07</option>
+													<option value=8 class=select-field__option>08</option>
+													<option value=9 class=select-field__option>09</option>
+													<option value=10 class=select-field__option>10</option>
+													<option value=11 class=select-field__option>11</option>
+													<option value=12 class=select-field__option>12</option>
+												</select>
+											</label>
+											<label class="select-field card__form-section-item card__form-section-item--validity-year">
+												<select name=card-validity-year class=select-field__select>
+													<option value=2018 class=select-field__option selected>2018</option>
+													<option value=2019 class=select-field__option>2019</option>
+													<option value=2020 class=select-field__option>2020</option>
+													<option value=2021 class=select-field__option>2021</option>
+													<option value=2022 class=select-field__option>2022</option>
+												</select>
+											</label>
+										</fieldset>
+										<label class="input-field card__item card__item--owner">
+											<span class="input-field__label input-field__label--hidden">Держатель карты</span>
+											<input type=text name=card-owner class=input-field__input pattern="/[A-Za-z]{4}?/" placeholder="Держатель карты"
+											 required>
+										</label>
+									</div>
+									<div class="card__content card__content--back">
+										<label class="input-field card__item card__item--code">
+											<span class=input-field__label>Код CVV2 / CVC2</span>
+											<input type=text name=card-code class="input-field__input input-field__input--tip" pattern="/[0-9]{3}/"
+											 required>
+											<span class=input-field__tip-sign></span>
+										</label>
+									</div>
+									<button type=submit class="btn btn--blue card__form-submit">Оплатить</button>
+								</form>
+							</section>
+							<!--Card End-->
+						</section>
+						<!--Payment End-->
+					</main>
+					<!--Main End-->
+					<!--Page Footer Start-->
+					<footer class=page-footer>
+						<p class=page-footer__text>Исходя из астатической системы координат Булгакова, соединение стабильно. Краевая часть артезианского бассейна, которая
+							в настоящее время находится ниже уровня моря, ослабляет систематический уход. Лисичка традиционно трансформирует прецессионный
+							годовой параллакс.</p>
+						<p class=page-footer__text>Выклинивание абсолютно аккумулирует твердый pадиотелескоп Максвелла.</p>
+						<p class=page-footer__text>Алмаз слагает горст. Делювий длительно колеблет лазерный подвижный объект.</p>
+						<p class=page-footer__text>Устойчивость, например, параллельна. Аргумент перигелия определяет боксит. Проекция вертикально дает уходящий диабаз.
+							Если пренебречь малыми величинами, то видно, что угол крена покрывает вибрирующий волчок, что обусловлено не только
+							первичными неровностями эрозионно-тектонического рельефа поверхности кристаллических пород, но и проявлениями долее
+							поздней блоковой тектоники. Засветка неба заставляет иначе взглянуть на то, что такое волчок.</p>
+					</footer>
+					<!--Page Footer End-->
+				</div>
+			</div>
+		</div>
+		<!--Page End-->
+		<script src=/assets/scripts/app.min.js></script>
+	</body>
+
+</html>

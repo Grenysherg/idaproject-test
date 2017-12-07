@@ -1,9 +1,0 @@
-extends /blocks/layout-default/layout-default
-
-include /blocks/payments-page/payments-page
-
-block head
-	- var page = getData('payments-page');
-
-block content
-	+payments-page()
