@@ -16,9 +16,7 @@ mixin card()
 					- var n = 1;
 
 					each item in card.numberInputs
-						+input-field(item).__form-section-item--number(class=n === card.numberInputs.length
-							? '--last'
-							: '')
+						+input-field(item).__form-section-item--number(class=n === card.numberInputs.length ? '--last' : '')
 
 						- n++;
 				+e('fieldset').form-section
