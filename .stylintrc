@@ -4,7 +4,7 @@
 	// use gulp task style:lint instead
 	"blocks": "never",
 	"brackets": "never",
-	"colons": "never",
+	// "colons": "never",
 	"colors": false,
 	"commaSpace": "always",
 	"commentSpace": "always",
