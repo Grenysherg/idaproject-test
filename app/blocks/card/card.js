@@ -13,7 +13,8 @@ $(() => {
 	cardForm.parsley({
 		trigger: 'change',
 		successClass: 'input-field__input--success',
-		errorClass: 'input-field__input--error'
+		errorClass: 'input-field__input--error',
+		errorsWrapper: ''
 	});
 
 	cardForm.find('.card__form-section-item--number').find('.input-field__input').mask('0000', {translation: {
