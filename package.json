@@ -102,10 +102,12 @@
     "jade-get-data": "^1.0.0",
     "jade-injected": "^1.0.2",
     "jquery": "^2.1.4",
+    "jquery-ui": "^1.10.5",
     "merge-stream": "^1.0.0",
     "node-notifier": "^4.3.1",
     "npm-install-webpack-plugin": "^2.0.2",
     "npm-run-all": "^1.8.0",
+    "public": "^0.1.2",
     "pug-lint": "^2.2.2",
     "require-dir": "^0.3.2",
     "rimraf": "^2.5.0",
@@ -123,5 +125,11 @@
     "webpack": "^1.12.9",
     "webpack-stats-logger": "^1.0.1",
     "webpack-stream": "^3.1.0"
+  },
+  "dependencies": {
+    "input-placeholder-polyfill": "^1.0.0",
+    "jquery-mask-plugin": "^1.14.12",
+    "jquery-ui": "^1.12.1",
+    "parsleyjs": "^2.8.0"
   }
 }

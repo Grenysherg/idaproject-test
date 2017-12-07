@@ -1,4 +1,9 @@
 .select-field
+	display inline-block
+
+	vertical-align top
+
+
 	&__label
 		font-family $arial
 		font-size 16px
@@ -8,8 +13,88 @@
 		color $bali-hai
 
 
-	&__select
-		height 42px
+	&__custom-select
+		position relative
+
+		display block
+
+		padding-top 11px
+		padding-right 30px
+		padding-left 13px
+		padding-bottom 8px
+
+		background-color $white
+		border 1px solid $mystic
+
+		cursor pointer
+
+
+	&__custom-select-text
+		font-family $arial
+		font-size 16px
+		font-weight normal
+		font-style normal
+		line-height 21px
+		color $tuna
+
+	&__custom-select-icon
+		position absolute
+		top 16px
+		right 9px
+
+		sprite($arrow)
+
+
+	&__custom-select-container
+		position absolute
+		z-index 1
+
+		display none
+
+
+		&--open
+			display block
+
+
+		& .ui-menu
+			margin 0
+			padding 0
+
+			overflow auto
+			overflow-x hidden
+
+			list-style none
+
+
+		& .ui-menu-item
+			margin-top -1px
+			padding-top 11px
+			padding-right 30px
+			padding-left 13px
+			padding-bottom 8px
+
+			background-color $white
+			border 1px solid $mystic
+
+			cursor pointer
+
+
+		& .ui-menu-item-wrapper
+			display inline
+
+			font-family $arial
+			font-size 16px
+			font-weight normal
+			font-style normal
+			line-height 21px
+			color $tuna
+
+
+	&__custom-select-option
+		padding-top 10px
+		padding-right 10px
+		padding-left 10px
+		padding-bottom 9px
 
 		font-family $arial
 		font-size 16px
@@ -19,3 +104,5 @@
 		color $tuna
 
 		background-color $white
+		border 1px solid $mystic
+

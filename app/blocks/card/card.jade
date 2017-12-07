@@ -22,7 +22,7 @@ mixin card()
 				+e('fieldset').form-section
 					+e('legend').form-section-title='Срок действия'
 					each item in card.validitySelects
-						+select-field(item).__form-section-item
+						+select-field(item)(class='__form-section-item--' + item.modifier)
 				+input-field(card.owner).__item--owner
 			+e('div').content--back
 				+input-field(card.code).__item--code

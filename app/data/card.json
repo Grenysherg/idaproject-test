@@ -2,29 +2,33 @@
 	"numberInputs": [
 		{
 			"name": "card-number-1",
-			"type": "number",
+			"type": "text",
 			"attributes": {
+				"pattern": "/[0-9]{4}/",
 				"required": true
 			}
 		},
 		{
 			"name": "card-number-2",
-			"type": "number",
+			"type": "text",
 			"attributes": {
+				"pattern": "/[0-9]{4}/",
 				"required": true
 			}
 		},
 		{
 			"name": "card-number-3",
-			"type": "number",
+			"type": "text",
 			"attributes": {
+				"pattern": "/[0-9]{4}/",
 				"required": true
 			}
 		},
 		{
 			"name": "card-number-4",
-			"type": "number",
+			"type": "text",
 			"attributes": {
+				"pattern": "/[0-9]{4}/",
 				"required": true
 			}
 		}
@@ -33,8 +37,9 @@
 		"labelText": "Код CVV2 / CVC2",
 		"isLabelVisible": true,
 		"name": "card-code",
-		"type": "number",
+		"type": "text",
 		"attributes": {
+			"pattern": "/[0-9]{3}/",
 			"required": true
 		},
 		"tip": true
@@ -45,6 +50,7 @@
 		"name": "card-owner",
 		"type": "text",
 		"attributes": {
+			"pattern": "/[A-Za-z]{4}?/",
 			"placeholder": "Держатель карты",
 			"required": true
 		}
@@ -52,6 +58,7 @@
 	"validitySelects": [
 		{
 			"name": "card-validity-month",
+			"modifier": "validity-month",
 			"attributes": {},
 			"options": [
 				{
@@ -120,6 +127,7 @@
 		},
 		{
 			"name": "card-validity-year",
+			"modifier": "validity-year",
 			"attributes": {},
 			"options": [
 				{
