@@ -1,6 +1,6 @@
 # Тестовое задание от ИДАГРУПП
 
-**Использовалась готовая сборка [CSSSR Project Template](https://github.com/CSSSR/csssr-project-template/blob/master/readme.md#csssr-project-template)**
+**Использовалась готовая сборка [CSSSR Project Template](https://github.com/CSSSR/csssr-project-template)**
 
 **[Собранная версия](https://grenysherg.github.io/idaproject-test/payments.html)**
 
